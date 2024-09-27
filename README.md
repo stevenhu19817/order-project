@@ -64,7 +64,7 @@ LIMIT 10;
 
 系統對於擴展是開放的，但對於修改是封閉的：
 - **格式轉換**：新貨幣格式只需新增對應的 `CurrencyFormatterStrategy` 子類別，無需修改現有的程式碼，只需透過 `FormatterFactory.register_formatter` 註冊新的格式化器。
-- **驗證邏輯**：同樣地，新的驗證邏輯可以通過繼承 `Validator` 類別來實現，而不需要修改現有的驗證器或 `OrderValidator`。
+- **驗證邏輯**：新的驗證邏輯可以通過繼承 `Validator` 類別來實現，而不需要修改現有的驗證器或 `OrderValidator`。
 
 ## 3. 里氏替換原則 (Liskov Substitution Principle, LSP)
 
